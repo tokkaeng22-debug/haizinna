@@ -1,0 +1,9 @@
+{
+  "name": "cut-local-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"start": "node server.mjs", "test": "node --test tests/*.test.mjs", "setup:ai": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/setup-ai.ps1"},
+  "dependencies": {"express": "^5.1.0", "ffmpeg-static": "^5.2.0", "@ffprobe-installer/ffprobe": "^2.1.2"},
+  "devDependencies": {"@playwright/test": "^1.55.0", "agent-browser": "^0.21.0"}
+}
